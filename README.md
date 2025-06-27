@@ -1,4 +1,4 @@
-# MF-ConS: Multi-Faceted Consistency Learning with Active Cross-Labeling for Barely-Supervised 3D Medical Image Segmentation
+# MF-ConS
 
 This repository contains the **PyTorch implementation** of our paper:
 
