@@ -57,13 +57,14 @@ Refer to ./data for details
 
 
 3. Train
-cd ./code
+```bash
 python train_MFConS_{}_3D.py --labeled_num {} --budge {} --gpu 0 --active_type uncer_div
+```
 
-
-4. Test 
-cd ./code
-python test_3D.py
+5. Test
+```bash
+python test_3D.py --gpu 0 --exp {}
+```
 
 
 ## :books: Citation
