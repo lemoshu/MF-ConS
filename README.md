@@ -70,11 +70,12 @@ python test_3D.py --gpu 0 --exp {}
 ## :books: Citation
 
 If you find this paper useful, please cite as:
+```bibtex
 @article{wu2025mfcons,
-  title={Multi-Faceted Consistency Learning with Active Cross-Labeling for Barely-Supervised 3D Medical Image Segmentation},
+  title={Few Slices Suffice: Multi-Faceted Consistency Learning with Active Cross-Annotation for Barely-supervised 3D Medical Image Segmentation},
   author={Wu, Xinyao and Xu, Zhe and Tong, Raymond Kai-yu},
   journal={MICCAI},
   year={2024}
 }
+```
 
-:beers: The implementation of other SSL approaches can be referred to the author Dr. Luo's [SSL4MIS project](https://github.com/HiLab-git/SSL4MIS).
