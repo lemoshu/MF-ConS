@@ -1,1 +1,69 @@
-# MF-ConS
+# MF-ConS: Multi-Faceted Consistency Learning with Active Cross-Labeling for Barely-Supervised 3D Medical Image Segmentation
+
+This repository contains the **PyTorch implementation** of our paper:
+
+> **[Multi-Faceted Consistency Learning with Active Cross-Labeling for Barely-Supervised 3D Medical Image Segmentation](https://doi.org/10.1016/j.media.2025.102xxx)**  
+> *MICCAI, 2024*
+
+---
+
+## 🧠 Introduction
+
+### 📄 Abstract
+
+Achieving accurate 3D medical image segmentation typically requires dense voxel-level annotations, which are costly and time-consuming. To reduce annotation burden, we propose **MF-ConS**, a **Multi-Faceted Consistency Learning** framework designed for a new setting termed **Active Barely-Supervised Learning (Active BSL)**.
+
+MF-ConS builds upon a teacher-student architecture and introduces a **cross-annotation strategy** where only three orthogonal slices (axial, sagittal, and coronal) per scan are labeled. To further optimize labeling efficiency, we integrate an **active learning module (DUS-AL)** that selects the most diverse and uncertain samples.
+
+MF-ConS introduces three complementary consistency constraints:
+- **Neighbor-Informed Object Prediction (NIOP)** for enhancing fine-grained contextual understanding,
+- **Prototype-driven Consistency** for feature compactness and discriminativeness,
+- **Stability Constraint** for robustness under perturbations.
+
+---
+
+## 🛠 Requirements
+
+- Python == 3.7  
+- PyTorch >= 1.6  
+- CUDA toolkit (tested with CUDA 10.2)  
+- `scikit-learn`, `scipy`, `numpy`, `SimpleITK`, `matplotlib`
+
+(Refer to `requirements.txt` for a full list.)
+
+---
+
+## 💻 Usage
+
+1. Clone the Repository
+
+```bash
+git clone https://github.com/lemoshu/MF-ConS.git
+cd MF-ConS
+
+
+2. Data Preparation
+Refer to ./data for details
+
+
+3. Train
+cd ./code
+python train_MFConS_{}_3D.py --labeled_num {} --budge {} --gpu 0 --active_type uncer_div
+
+
+4. Test 
+cd ./code
+python test_3D.py
+
+
+## :books: Citation
+
+If you find this paper useful, please cite as:
+@article{wu2025mfcons,
+  title={Multi-Faceted Consistency Learning with Active Cross-Labeling for Barely-Supervised 3D Medical Image Segmentation},
+  author={Wu, Xinyao and Xu, Zhe and Tong, Raymond Kai-yu},
+  journal={MICCAI},
+  year={2024}
+}
+
+:beers: The implementation of other SSL approaches can be referred to the author Dr. Luo's [SSL4MIS project](https://github.com/HiLab-git/SSL4MIS).
