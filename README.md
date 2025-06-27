@@ -2,7 +2,7 @@
 
 This repository contains the **PyTorch implementation** of our paper:
 
-> **[Multi-Faceted Consistency Learning with Active Cross-Labeling for Barely-Supervised 3D Medical Image Segmentation](https://doi.org/10.1016/j.media.2025.102xxx)**  
+> **[Multi-Faceted Consistency Learning with Active Cross-Labeling for Barely-Supervised 3D Medical Image Segmentation]()**  
 > *MICCAI, 2024*
 
 ---
@@ -22,6 +22,15 @@ MF-ConS introduces three complementary consistency constraints:
 
 ---
 
+## ✅ To-Do List
+
+- [ ] 🔧 Reorganize and clean up the code repository structure  
+- [ ] 📂 Add instructions and scripts for each dataset
+  - [ ] BraTS 2019 (T2-FLAIR)
+  - [ ] Left Atrium (GE-MRI)
+  - [ ] Pancreas (NIH-CT)
+
+
 ## 🛠 Requirements
 
 - Python == 3.7  
@@ -40,6 +49,7 @@ MF-ConS introduces three complementary consistency constraints:
 ```bash
 git clone https://github.com/lemoshu/MF-ConS.git
 cd MF-ConS
+```
 
 
 2. Data Preparation
